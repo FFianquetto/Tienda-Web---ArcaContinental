@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Productos</title>
+    <link type="text/css" rel="stylesheet" href="css/hoja-estilo.css" />
+    <link type="text/css" rel="stylesheet" href="css/hoja-estilo-cel.css" />
+
+    <!-- Script para cargar el chatbot de Watson Assistant -->
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "96f101c2-881f-4b35-a96d-05de0a5e19f6", // El ID de esta integración
+            region: "us-south", // La región donde está alojada tu integración
+            serviceInstanceID: "a2d83a18-25bc-473f-a2c3-a4d054c9866d", // El ID de tu instancia de servicio
+            onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function () {
+            const t = document.createElement('script');
+            t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+            document.head.appendChild(t);
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <p>
+            <sup>Arca</sup>Continental
+        </p>
+        <h1>Bienvenido</h1>
+        <nav>
+            <ul>
+                <!-- <li class="seleccionado">Inicio</li> -->
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="promos.html">Promociones</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="estatus.html">Estatus</a></li>
+                <!-- <li><a href="user.html">Usuario</a></li> -->
+                <li><a href="carrito.html">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+        <h1>¡Conoce nuestros productos!</h1>
+        <section>
+            <h2>Pack de 8 Cocacolas a 245$</h2>
+            <p>
+                <img class="small" src="imagenes/coca2.5.jpg" width="250" height="250" alt="Coca 2.5" />
+            </p>
+        </section>
+    </article>
+
+    <aside>
+        <section>
+            <h3>Los más buscados</h3>
+            <ul>
+                <li>Coca</li>
+                <li>Fanta</li>
+                <li>Sprite</li>
+                <li>Fuze Tea</li>
+                <li>Agua Ciel</li>
+            </ul>
+
+            <h3>Correo de Ayuda</h3>
+            <p> <a href="mailto:feradolfocancinocuenca@gmail.com">feradolfocancinocuenca@gmail.com</a>
+            </p>
+
+            <h3>Nos encontramos en:</h3>
+            <ul>
+                <li>Mty</li>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230187.0030618438!2d-100.46790835131314!3d25.649011980429606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86629531b437f8f5%3A0xa3d3d3ca6ac89894!2sMonterrey%2C%20N.L.!5e0!3m2!1ses-419!2smx!4v1694896531093!5m2!1ses-419!2smx"
+                    width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </ul>
+
+        </section>
+    </aside>
+    <footer>
+        <p class="copyright">All information copyright © ArcaContinental</p>
+        <!-- <p class="contact">Contact: <a
+                href="mailto:feradolfocancinocuenca@gmail.com">feradolfocancinocuenca@gmail.com</a>
+        </p> -->
+    </footer>
+</body>
+
+</html>
